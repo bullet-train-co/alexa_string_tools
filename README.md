@@ -1,6 +1,6 @@
 # Alexa String Tools
 
-This library adds utility methods to `String` that help convert a user's words as spoken to Alexa (as reported by Alexa to your app) into the same format the user would have typed using a keyboard.
+Adds utility methods to Ruby strings that convert a user's spoken words as reported by Alexa into the same format the user would have typed using a keyboard.
 
 ## Installation
 
