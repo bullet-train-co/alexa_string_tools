@@ -7,7 +7,7 @@ Adds utility methods to Ruby strings that convert a user's spoken words as repor
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'alexa_string_tools'
+gem 'alexa_string_tools', github: 'bullet-train-co/alexa_string_tools'
 ```
 
 And then execute:
