@@ -1,8 +1,6 @@
 # AlexaStringTools
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/alexa_string_tools`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This library adds utility methods to `String` that help convert a user's words as spoken to Alexa (as reported by Alexa to your app) into the same format the user would have typed using a keyboard.
 
 ## Installation
 
@@ -22,7 +20,25 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Email Addresses
+
+Getting an email address via a conversation with Alexa is difficult and won't always work, but in some cases it can.
+
+For example:
+
+```
+"john smith underscore two thousand eighteen at gmail dot com".email_from_alexa
+```
+
+Returns `johnsmith_2018@gmail.com`. And:
+
+```
+"j. o. n. dot smith at gmail dot come".email_from_alexa
+```
+
+Returns `johnsmith_2018@gmail.com`.
+
+It's recommended that when using this method, you make a point of spelling back the entire email address to the user to make sure you haven't made any mistakes. (We'll add a method for this.) You can also prompt users to spell their input letter-by-letter, but even then sometimes Alexa will report `b.` when a user said `v.`, etc.
 
 ## Development
 
@@ -32,7 +48,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/alexa_string_tools. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/bullet-train-co/alexa_string_tools. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
@@ -40,4 +56,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the AlexaStringTools project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/alexa_string_tools/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the AlexaStringTools project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/bullet-train-co/alexa_string_tools/blob/master/CODE_OF_CONDUCT.md).
