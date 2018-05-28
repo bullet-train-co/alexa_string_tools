@@ -36,7 +36,7 @@ Returns `johnsmith_2018@gmail.com`. And:
 "j. o. n. dot smith at gmail dot come".email_from_alexa
 ```
 
-Returns `johnsmith_2018@gmail.com`.
+Returns `jon.smith@gmail.com`.
 
 It's recommended that when using this method, you make a point of spelling back the entire email address to the user to make sure you haven't made any mistakes. (We'll add a method for this.) You can also prompt users to spell their input letter-by-letter, but even then sometimes Alexa will report `b.` when a user said `v.`, etc.
 
