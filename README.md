@@ -27,7 +27,7 @@ Getting an email address via a conversation with Alexa is difficult and won't al
 For example:
 
 ```
-"john smith underscore two thousand eighteen at gmail dot com".email_from_alexa
+"john smith underscore two thousand and eighteen at gmail dot com".email_from_alexa
 ```
 
 Returns `johnsmith_2018@gmail.com`. And:
