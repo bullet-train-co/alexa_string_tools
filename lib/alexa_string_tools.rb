@@ -18,7 +18,7 @@ module AlexaStringTools
     string.gsub(' ', '')
   end
 
-  def self.alexa_string_mapping
+  def alexa_string_mapping
     return if @alexa_string_mapping
 
     @alexa_string_mapping = {}
