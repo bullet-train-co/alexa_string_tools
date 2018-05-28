@@ -33,7 +33,7 @@ For example:
 Returns `johnsmith_2018@gmail.com`. And:
 
 ```
-"j. o. n. dot smith at gmail dot come".email_from_alexa
+"j. o. n. dot smith at gmail dot com".email_from_alexa
 ```
 
 Returns `jon.smith@gmail.com`.
